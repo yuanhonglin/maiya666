@@ -1,0 +1,63 @@
+
+.input-box.data-v-02a8b5ac {
+	width: 100%;
+	height: 100rpx;
+	padding: 10rpx 33rpx;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.input-img-box.data-v-02a8b5ac {
+	width: 56rpx;
+	height: 56rpx;
+}
+.input-img.data-v-02a8b5ac {
+	width: 56rpx;
+	height: 56rpx;
+	border-radius: 100%;
+}
+.input.data-v-02a8b5ac {
+	height: 72rpx;
+	border-radius: 36rpx;
+	background-color: #f9f9f9;
+	padding: 0 20rpx;
+}
+.send-btn.data-v-02a8b5ac {
+	height: 56rpx;
+	padding: 0 10rpx;
+}
+.option-box.data-v-02a8b5ac {
+	height: 220rpx;
+}
+.option-img-box.data-v-02a8b5ac {
+	width: 120rpx;
+	height: 120rpx;
+	background: #e6e6e6;
+	border: 1px solid rgba(230, 230, 230, 1);
+	border-radius: 28rpx;
+	margin-left: 50rpx;
+}
+.option-img.data-v-02a8b5ac {
+	width: 60rpx;
+	height: 46rpx;
+}
+/* 表情盒子 */
+.emojiBox.data-v-02a8b5ac {
+	height: 200px;
+	padding: 0 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.emoji-cell.data-v-02a8b5ac {
+	width: 12.5%;
+	height: 33px;
+	display: inline-block;
+}
+.touch-active.data-v-02a8b5ac {
+	/* width: 92rpx;
+	height: 92rpx;
+	padding: 20rpx; */
+	border-radius: 12rpx;
+	font-size: 48rpx;
+}
+

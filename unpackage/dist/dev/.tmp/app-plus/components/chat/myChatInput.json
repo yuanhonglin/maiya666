@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "chat-emoji": "/components/chat/emoji",
+    "chat-image": "/components/chat/image"
+  }
+}

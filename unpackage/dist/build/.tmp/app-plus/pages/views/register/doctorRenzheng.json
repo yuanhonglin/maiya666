@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "医生认证",
+  "usingComponents": {
+    "w-picker": "/components/uniapp-components/w-picker/w-picker"
+  }
+}

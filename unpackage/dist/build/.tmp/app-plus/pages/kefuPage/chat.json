@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "患者",
+  "usingComponents": {
+    "tui-badge": "/components/badge/badge",
+    "tui-loadmore": "/components/loadmore/loadmore",
+    "chat-input": "/components/chatInput"
+  }
+}
