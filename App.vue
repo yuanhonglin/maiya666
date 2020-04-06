@@ -19,6 +19,7 @@ let is_reconnect = false;
 				// }
 			],
 			client:'',
+			client1:'',
 		},
 		onLaunch: function() {
 			// console.log('App Launch')
