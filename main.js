@@ -3,7 +3,6 @@ import App from './App'
 import store from './store' // 引入vuex
 import http from '@/common/luchApi/api.js';  // 仿axios和promise的请求封装
 // import http from '@/common/flyioApi/api.js';  // 引入flyio请求，[https://wendux.github.io/dist/#/doc/flyio/readme]
-
 // 引入公用js,
 import '@/utils/globalFun.js' // 文件内部已经挂载了全局
 import helper from '@/utils/uniToast.js'; // 需要自行处理挂载
