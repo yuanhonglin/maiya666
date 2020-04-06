@@ -18,8 +18,7 @@ let is_reconnect = false;
 				// 	avatar: ''
 				// }
 			],
-			client:'',
-			client1:''
+			client:''
 		},
 		onLaunch: function() {
 			// console.log('App Launch')
