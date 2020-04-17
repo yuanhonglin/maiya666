@@ -45,20 +45,23 @@
       "style": "dark",
       "background": "#ffffff"
     },
+    "compatible": {
+      "ignoreVersion": true
+    },
     "usingComponents": true,
     "nvueCompiler": "uni-app",
     "distribute": {
       "icons": {
         "android": {
-          "hdpi": "E:/辣妈科技文件/麦芽app图标/麦芽儿/480.png",
-          "xhdpi": "E:/辣妈科技文件/麦芽app图标/麦芽儿/768x1024.png"
+          "hdpi": "F:/荣科科技/img/1_1455541711.png",
+          "xhdpi": "F:/荣科科技/img/1_1455541711.png"
         }
       },
       "splashscreen": {
         "android": {
-          "hdpi": "E:/辣妈科技文件/麦芽app图标/麦芽儿/480.png",
-          "xhdpi": "E:/辣妈科技文件/麦芽app图标/麦芽儿/720.png",
-          "xxhdpi": "E:/辣妈科技文件/麦芽app图标/麦芽儿/1080.png"
+          "hdpi": "F:/荣科科技/img/1_1455541711.png",
+          "xhdpi": "",
+          "xxhdpi": ""
         }
       },
       "google": {
@@ -89,7 +92,7 @@
       },
       "apple": {},
       "plugins": {
-        "ad": {},
+        "ad": null,
         "share": {
           "weixin": {
             "appid": "wx1562ff4cd0b7dfdb",
@@ -112,7 +115,7 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "2.6.5",
+      "compilerVersion": "2.6.1",
       "control": "v8",
       "nvueCompiler": "uni-app",
       "renderer": "auto",

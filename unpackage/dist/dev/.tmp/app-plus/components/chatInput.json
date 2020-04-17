@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "chataudio": "/components/chat/audio",
+    "chatimage": "/components/chat/image"
+  }
 }

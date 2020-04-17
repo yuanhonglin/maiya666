@@ -228,6 +228,7 @@ let disp = require('webIM/utils/broadcast');
 .top{
 	padding: 30rpx;
 	background-color: #fff;
+	margin-bottom: 10rpx;
 	.top-content{
 		display: flex;
 		justify-content: center;

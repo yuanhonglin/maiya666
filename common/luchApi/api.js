@@ -80,19 +80,19 @@ const API = {
 	
 	//注册接口
 	register(data){
-		return http.post('/index/Doctors/register',data)
+		return http.post('/admin/Doctors/register',data)
 	},
 	// 登录接口
 	login(data){
-		return http.post('/index/Doctors/login',data)
+		return http.post('/admin/Doctors/login',data)
 	},
 	//获取医生端的聊天列表
 	getMessageList(data){
-		return http.post('/index/Doctors/chatrecord',data)
+		return http.post('/admin/Doctors/chatrecord',data)
 	},
 	//医生端发送消息后转发到微信上端接口
 	zhuanfaMessage(data){
-		return http.post('/index/Wechat/forward',data)
+		return http.post('/admin/Wechat/forward',data)
 	}
 }
 

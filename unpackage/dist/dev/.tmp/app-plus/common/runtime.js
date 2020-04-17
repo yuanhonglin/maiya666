@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/uniapp-components/w-picker/w-picker":1,"components/chat/myChatInput":1,"components/loadmore/loadmore":1,"components/badge/badge":1,"components/chatInput":1,"components/chat/emoji":1};
+/******/ 		var cssChunks = {"components/uniapp-components/w-picker/w-picker":1,"components/chat/myChatInput":1,"components/loadmore/loadmore":1,"components/badge/badge":1,"components/chatInput":1,"components/chat/emoji":1,"components/chat/audio":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/uniapp-components/w-picker/w-picker":"components/uniapp-components/w-picker/w-picker","components/chat/myChatInput":"components/chat/myChatInput","components/loadmore/loadmore":"components/loadmore/loadmore","components/badge/badge":"components/badge/badge","components/chatInput":"components/chatInput","components/chat/emoji":"components/chat/emoji","components/chat/image":"components/chat/image"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/uniapp-components/w-picker/w-picker":"components/uniapp-components/w-picker/w-picker","components/chat/myChatInput":"components/chat/myChatInput","components/loadmore/loadmore":"components/loadmore/loadmore","components/badge/badge":"components/badge/badge","components/chatInput":"components/chatInput","components/chat/emoji":"components/chat/emoji","components/chat/image":"components/chat/image","components/chat/audio":"components/chat/audio"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

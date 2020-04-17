@@ -3,13 +3,13 @@
 		<view class="status_bar"><!-- 这里是状态栏 --></view>
 		<view class="top">
 			<view class="top-left">
-				<image class="img1" src="../../../static/imgs/taoci%20(137).png" mode=""></image>
-				<text>dasdasda</text>
+				<image class="img1" :src="myPhoto" mode=""></image>
+				<text>{{nickname}}</text>
 			</view>
 			<image class="img2" src="../../../static/image/shezhi.png" mode=""></image>
 		</view>
 		<view class="paint">
-			<view class="paint-num">
+			<view class="paint-num" @tap="gotohuanzhe">
 				<text class="t1">666</text>
 				<text class="t2">患者</text>
 			</view>
@@ -21,8 +21,8 @@
 				<text class="t2">评价</text>
 			</view>
 		</view>
-		<view class="item">
-			<text class="t1">健康档案</text>
+		<view class="item" @tap="gotorenzheng">
+			<text class="t1">去认证</text>
 			<text class="iconfont t2">&#xe660;</text>
 		</view>
 		<view class="item">
@@ -40,9 +40,29 @@
 <script>
 export default {
 	data() {
-		return {};
+		return {
+			myPhoto:'../../../static/imgs/taoci%20(137).png',
+			nickname:'',
+		};
+	},
+	onLoad() {
+		
+	},
+	onShow() {
+		this.myPhoto=this.$store.state.userInfo.img
+		this.nickname=this.$store.state.userInfo.nickname
 	},
 	methods: {
+		gotorenzheng(){
+			uni.navigateTo({
+				url:"../../views/register/doctorRenzheng"
+			})
+		},
+		gotohuanzhe(){
+			uni.navigateTo({
+				url:'../../views/patient/newPaint'
+			})
+		},
 		clear() {
 			uni.showModal({
 				title: '',

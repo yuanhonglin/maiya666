@@ -24,33 +24,33 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.cont.data-v-740d491f {
+.cont.data-v-5dc60263 {
   background-color: #f7f7f7;
   height: 100vh;
 }
-.time-box.data-v-740d491f {
+.time-box.data-v-5dc60263 {
   margin: 40rpx 0;
 }
-.time.data-v-740d491f {
+.time.data-v-5dc60263 {
   border-radius: 25rpx;
   background-color: #cfcfcf;
   padding: 5rpx 30rpx;
   font-size: 28rpx;
   color: #ffffff;
 }
-.chat-box.data-v-740d491f {
+.chat-box.data-v-5dc60263 {
   height: calc(100vh - 100rpx);
   padding-bottom: 30rpx;
   box-sizing: border-box;
 }
-.chat-item.data-v-740d491f {
+.chat-item.data-v-5dc60263 {
   padding: 0 30rpx;
   margin-top: 38rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.img-box.data-v-740d491f {
+.img-box.data-v-5dc60263 {
   width: 80rpx;
   height: 80rpx;
   border-radius: 100%;
@@ -58,11 +58,11 @@
   background: linear-gradient(320deg, #febb6b 0%, #ffa429 100%);
   margin-right: 30rpx;
 }
-.kefu-img.data-v-740d491f {
+.kefu-img.data-v-5dc60263 {
   width: 48rpx;
   height: 40rpx;
 }
-.msg-box.data-v-740d491f {
+.msg-box.data-v-5dc60263 {
   position: relative;
   max-width: 550rpx;
   background: #ffffff;
@@ -79,14 +79,14 @@
           flex-wrap: wrap;
   word-break: break-word;
 }
-.msg-box.txt image.data-v-740d491f {
+.msg-box.txt image.data-v-5dc60263 {
   width: 52rpx;
   height: 52rpx;
 }
-.msg-box.img image.data-v-740d491f {
+.msg-box.img image.data-v-5dc60263 {
   width: 510rpx;
 }
-.msg-box.data-v-740d491f::before {
+.msg-box.data-v-5dc60263::before {
   content: '';
   position: absolute;
   left: -28rpx;
@@ -94,28 +94,28 @@
   border: 15rpx solid transparent;
   border-right: 15rpx solid #ffffff;
 }
-.user-photo.data-v-740d491f {
+.user-photo.data-v-5dc60263 {
   width: 80rpx;
   height: 80rpx;
   border-radius: 100%;
 }
-.chat-kehu.data-v-740d491f {
+.chat-kehu.data-v-5dc60263 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
-.chat-kehu .img-box.data-v-740d491f {
+.chat-kehu .img-box.data-v-5dc60263 {
   margin-right: 0;
   margin-left: 30rpx;
 }
-.chat-kehu .msg-box.data-v-740d491f::before {
+.chat-kehu .msg-box.data-v-5dc60263::before {
   left: auto;
   right: -28rpx;
   top: 24rpx;
   border: 15rpx solid transparent;
   border-left: 15rpx solid #ffffff;
 }
-.fot-box.data-v-740d491f {
+.fot-box.data-v-5dc60263 {
   position: fixed;
   left: 0;
   bottom: 0;

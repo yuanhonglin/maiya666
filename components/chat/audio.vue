@@ -19,11 +19,11 @@
 </template>
 
 <script>
-	let msgType = require("../../../msgtype");
+	let msgType = require("../../webIM/utils/msgtype");
 	let RECORD_CONST = require("./record_status");
 	let RecordStatus = RECORD_CONST.RecordStatus;
 	let RecordDesc = RECORD_CONST.RecordDesc;
-	let disp = require("../../../../../utils/broadcast");
+	let disp = require("../../webIM/utils/broadcast");
 	let RunAnimation = false
 	let recordTimeInterval = null;
 	const InitHeight = [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50]

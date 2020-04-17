@@ -46,7 +46,7 @@
 				var me = this;
 				uni.chooseImage({
 					count: 1,
-					sizeType: ["original", "compressed"],
+					sizeType: ["original", "compressed"] ,
 					sourceType: ["album"],
 					success(res){
 						me.upLoadImage(res);
@@ -63,12 +63,15 @@
 			},
 			
 			upLoadImage(res){
+				console.log(res)
 				var me = this;
 				var tempFilePaths = res.tempFilePaths;
 				var token = uni.getStorageSync('HuanXinToken');
+				console.log(token)
 				uni.getImageInfo({
 					src: res.tempFilePaths[0],
 					success(res){
+						console.log(res)
 						var allowType = {
 							jpg: true,
 							gif: true,
@@ -80,7 +83,7 @@
 						var height = res.height;
 						var index = res.path.lastIndexOf(".");
 						var filetype = (~index && res.path.slice(index + 1)) || "";
-						if(filetype.toLowerCase() in allowType){
+						// if(filetype.toLowerCase() in allowType){
 							console.log("https://a1.easemob.com/" + str[0] + "/" + str[1] + "/chatfiles");
 							uni.uploadFile({
 								url: "https://a1.easemob.com/" + str[0] + "/" + str[1] + "/chatfiles",
@@ -88,9 +91,10 @@
 								name: "file",
 								header: {
 									"Content-Type": "multipart/form-data",
-									Authorization: "Bearer " + token
+									"Authorization": "Bearer " + token
 								},
 								success(res){
+									console.log(res)
 									var data = res.data;
 									var dataObj = JSON.parse(data);
 									var id = me.$im.conn.getUniqueId();		// 生成本地消息 id
@@ -111,7 +115,7 @@
 										from: me.username.myName,
 										to: me.username.yourName,
 										ext: {
-											fromName: uni.getStorageSync('myHXId'),
+											fromName: uni.getStorageSync('myUsername'),
 											fromAvatar: me.$store.state.userInfo.avatar,
 											hxMsgId: msgType.IMAGE + id,
 											yonghuName: me.$store.state.userInfo.nickname
@@ -149,7 +153,7 @@
 									console.log("图片失败:",  err);
 								}
 							});
-						}
+						// }//
 					}
 				});
 			},

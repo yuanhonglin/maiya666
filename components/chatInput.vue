@@ -1,9 +1,15 @@
 <template>
 	<view>
+		<chataudio></chataudio>
 		<view class="cf-bg" @tap="cemojiCfBg" v-show="cfBg"></view>
 		<!--评论盒子-->
 		<view class="comment-fixed">
 			<view class="bot-chat">
+				<view class="icon-box">
+					<text class="iconfont" @tap="emojiShowHide(1)" style="color: yellow;">&#xe626;</text>
+					<!-- <text @tap="emojiShowHide(1)">表情</text> -->
+					<!-- <text class="iconfont" @tap="emojiShowHide(2)">&#xe626;</text> -->
+				</view>
 				<view class="form-box">
 					<!-- <text class="iconfont" @tap="openAudio">&#xe618;</text> -->
 					<input
@@ -23,9 +29,10 @@
 					/>
 				</view>
 				<view class="icon-box">
-					<!-- <text class="iconfont" @tap="emojiShowHide(1)">&#xe648;</text> -->
-					<text @tap="emojiShowHide(1)">表情</text>
-					<!-- <text class="iconfont" @tap="emojiShowHide(2)">&#xe621;</text> -->
+					<text style="color: #666;margin-left: 0;" class="iconfont" @tap="emojiShowHide(2)">&#xe611;</text>
+				</view>
+				<view class="icon-box">
+					<text @tap="reply" style="padding: 5px 10px;background: red;border-radius: 5px;color: #fff;background-color: #59c6ba;">发送</text>
 				</view>
 			</view>
 
@@ -39,33 +46,41 @@
 								:data-oxf="e.emoji">{{e.char}}</view>
 						</view>
 					</block>
-					<view class="send-emoji" @tap="reply" v-if="showTypeNum == 1">
+					<!-- <view class="send-emoji" @tap="reply" v-if="showTypeNum == 1">
 						发送
-					</view>
+					</view> -->
 				</scroll-view>
 				<view style="height:214rpx" v-if="showTypeNum == 2">
 						<view class="file-box">
+							<view class="file-item" @tap="openAudio">
+								<view class="iconfont" style="font-size: 70rpx;">&#xe604;</view>
+								<view class="file-item-name">
+									语音
+								</view>
+							</view>
 							<view class="file-item margin-right" @tap="sendImage">
-								<view class="iconfont">&#xe691;</view>
+								<view class="iconfont">&#xe63e;</view>
 								<view class="file-item-name">
 									图片
 								</view>
 							</view>
-						<!-- 	<view class="file-item" @tap="sendVideo">
-								<view class="iconfont" style="font-size: 70rpx;">&#xe638;</view>
-								<view class="file-item-name">
-									视频
-								</view>
-							</view> -->
 						</view>
 				</view>
 			</view>
+			<!-- 发送图片的处理组件 -->
+				<chatimage ref="image" @sendEnd="sendImageEnd" ></chatimage>
 		</view>
 	</view>
 </template>
 
 <script>
+	import chataudio from './chat/audio.vue';
+	import chatimage from './chat/image.vue';
 export default {
+	components:{
+		chataudio,
+		chatimage
+	},
 	data() {
 		return {
 			// 评论盒子
@@ -229,7 +244,9 @@ export default {
 			this.$helper.toast("none", "功能尚未开放~", 1500)
 		},
 		sendImage(){
-			this.$helper.toast("none", "功能尚未开放~", 1500)
+			console.log(4545)
+			this.$refs.image.sendImage();
+			// this.$helper.toast("none", "功能尚未开放~", 1500)
 		},
 		sendVideo(){
 			this.$helper.toast("none", "功能尚未开放~", 1500)
@@ -264,13 +281,13 @@ export default {
 		height: 100upx;
 		border-top: 1px solid rgba(238, 238, 238, 1);
 		background: rgba(255, 255, 255, 1);
-		padding: 14upx 32upx;
+		padding: 14upx 10upx;
 		.form-box {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
 			// width: 520rpx;
-			width: 620rpx;
+			width: 460rpx;
 			height: 72rpx;
 			border-radius: 36rpx;
 			.iconfont{
@@ -288,7 +305,7 @@ export default {
 				// width: 440rpx;
 				width: 100%;
 				outline: none;
-				margin-left: 24rpx;
+				// margin-left: 24rpx;
 				border-radius: 36rpx;
 				background-color: #f2f2f2;
 			}

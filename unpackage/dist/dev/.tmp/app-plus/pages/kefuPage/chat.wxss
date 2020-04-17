@@ -91,7 +91,7 @@ page {
       width: 88rpx;
       height: 88rpx;
       border-radius: 50%;
-      background-color: red;
+      background-color: #f7f7f7;
 }
 .container .content .m-item .m-content {
       display: -webkit-box;

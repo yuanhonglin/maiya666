@@ -15,7 +15,9 @@
     "pages/views/login/settingPassWord",
     "pages/kefuPage/kefuPage",
     "pages/kefuPage/chat",
-    "pages/views/index/qcode"
+    "pages/views/index/qcode",
+    "pages/views/patient/newPaint",
+    "pages/views/patient/userPaintDetail"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -56,6 +58,6 @@
     "autoclose": false
   },
   "appname": "麦芽医生端",
-  "compilerVersion": "2.6.5",
+  "compilerVersion": "2.6.1",
   "usingComponents": {}
 }

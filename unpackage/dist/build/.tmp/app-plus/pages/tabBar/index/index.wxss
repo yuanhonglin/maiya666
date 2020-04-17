@@ -29,15 +29,15 @@ page{
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.status_bar.data-v-20f58cf2 {
+.status_bar.data-v-754d9861 {
   height: var(--status-bar-height);
   width: 100%;
 }
-.top.data-v-20f58cf2 {
+.top.data-v-754d9861 {
   padding: 30rpx;
   background-color: #fff;
 }
-.top .top-content.data-v-20f58cf2 {
+.top .top-content.data-v-754d9861 {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -52,15 +52,15 @@ page{
     -webkit-align-items: center;
             align-items: center;
 }
-.top .top-content image.data-v-20f58cf2 {
+.top .top-content image.data-v-754d9861 {
       width: 140rpx;
       height: 140rpx;
 }
-.top .top-content text.data-v-20f58cf2 {
+.top .top-content text.data-v-754d9861 {
       color: #333;
       font-size: 32rpx;
 }
-.co-list.data-v-20f58cf2 {
+.co-list.data-v-754d9861 {
   padding: 53rpx 32rpx 32rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,26 +68,26 @@ page{
   border-bottom: 1px solid #eee;
   background-color: #fff;
 }
-.co-list .left.data-v-20f58cf2 {
+.co-list .left.data-v-754d9861 {
     height: 100%;
 }
-.co-list .left .imgs.data-v-20f58cf2 {
+.co-list .left .imgs.data-v-754d9861 {
       margin-top: 8rpx;
       width: 88rpx;
       height: 88rpx;
       border-radius: 50rpx;
 }
-.co-list .left .imgs image.data-v-20f58cf2 {
+.co-list .left .imgs image.data-v-754d9861 {
         width: 100%;
         height: 100%;
         border-radius: 50rpx;
         background-color: #efefef;
 }
-.co-list .right.data-v-20f58cf2 {
+.co-list .right.data-v-754d9861 {
     width: calc(100% - 100rpx);
     padding-left: 32rpx;
 }
-.co-list .right .tt.data-v-20f58cf2 {
+.co-list .right .tt.data-v-754d9861 {
       display: -webkit-box;
       display: -webkit-flex;
       display: flex;
@@ -95,7 +95,7 @@ page{
       white-space: nowrap;
       text-overflow: ellipsis;
 }
-.co-list .right .tt .name.data-v-20f58cf2 {
+.co-list .right .tt .name.data-v-754d9861 {
         font-size: 28rpx;
         font-weight: 400;
         color: #333333;
@@ -104,16 +104,16 @@ page{
         white-space: nowrap;
         text-overflow: ellipsis;
 }
-.co-list .right .tt .name.active.data-v-20f58cf2 {
+.co-list .right .tt .name.active.data-v-754d9861 {
         color: #69c6a2;
 }
-.co-list .right .tt .guans.data-v-20f58cf2 {
+.co-list .right .tt .guans.data-v-754d9861 {
         width: calc(100% - 300rpx);
         font-size: 24rpx;
         text-align: right;
         color: #59c6ba;
 }
-.co-list .right .jies.data-v-20f58cf2 {
+.co-list .right .jies.data-v-754d9861 {
       display: -webkit-box;
       display: -webkit-flex;
       display: flex;
@@ -127,22 +127,22 @@ page{
       color: #999999;
       font-size: 24rpx;
 }
-.co-list .right .jies .jie-l.data-v-20f58cf2 {
+.co-list .right .jies .jie-l.data-v-754d9861 {
         width: 400rpx;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
 }
-.co-list .right .jies .jie-r.data-v-20f58cf2 {
+.co-list .right .jies .jie-r.data-v-754d9861 {
         width: 7%;
 }
-.co-list .right .jies .jie-r .radi.data-v-20f58cf2 {
+.co-list .right .jies .jie-r .radi.data-v-754d9861 {
           width: 20rpx;
           height: 20rpx;
           border-radius: 50rpx;
           background-color: #e85f5f;
 }
-.co-list .right .jies .jie-r .read-num.data-v-20f58cf2 {
+.co-list .right .jies .jie-r .read-num.data-v-754d9861 {
           width: 30rpx;
           height: 30rpx;
           color: #fff;
@@ -152,7 +152,7 @@ page{
           border-radius: 50rpx;
           background-color: #e85f5f;
 }
-.co-list .right .time.data-v-20f58cf2 {
+.co-list .right .time.data-v-754d9861 {
       color: #999999;
       font-size: 24rpx;
 }

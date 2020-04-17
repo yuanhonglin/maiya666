@@ -123,7 +123,7 @@ export default {
 			},
 			visibility: false,
 			
-			myPhoto:'',    //个人的头像
+			myPhoto:'../../static/image/taoci%20(28).png',    //个人的头像
 			shopPhoto:'',  //对面店铺的聊天头像
 			shopName:'',
 			shopPhoto1:'',
@@ -149,7 +149,7 @@ export default {
 		let username = JSON.parse(options.username);
 		console.log(username);
 		
-		this.myPhoto=this.$store.state.userInfo.photo  //设置医生的头像
+		this.myPhoto=this.$store.state.userInfo.img  //设置医生的头像
 		this.paintImg=username.userImg		//设置患者的头像
 		uni.setNavigationBarTitle({
 			title:username.paintName
@@ -373,6 +373,7 @@ export default {
 		},
 		// 给微信用户端转发消息
 		zhuanfa(msg){
+			console.log(msg)
 			let data={
 				d_phone	:this.username.myName,
 				hid	:this.username.yourName,
@@ -460,7 +461,7 @@ page {
 				width: 88upx;
 				height: 88upx;
 				border-radius: 50%;
-				background-color: red;
+				background-color: #f7f7f7;
 			}
 			.m-content {
 				display: flex;

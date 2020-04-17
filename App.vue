@@ -19,7 +19,6 @@ let is_reconnect = false;
 				// }
 			],
 			client:'',
-			client1:'',
 		},
 		onLaunch: function() {
 			// console.log('App Launch')
@@ -29,7 +28,7 @@ let is_reconnect = false;
 			 * */
 			var a=uni.getStorageSync('isLogin');
 			if(!a){
-				uni.navigateTo({   //未登录跳转到登录注册页面
+				uni.redirectTo({   //未登录跳转到登录注册页面
 					url:'pages/views/register/newUser'
 				})
 			}
@@ -372,11 +371,11 @@ let is_reconnect = false;
 					// if (this.$im.conn.autoReconnectNumTotal < this.$im.conn.autoReconnectNumMax) {
 					// 	return;
 					// }
-					uni.showToast({
-						icon: 'none',
-						title: '聊天服务重连，请稍后重试',
-						duration: 1500
-					});
+					// uni.showToast({
+					// 	icon: 'none',
+					// 	title: '聊天服务重连，请稍后重试',
+					// 	duration: 1500
+					// });
 					// 环信失败回调  重新登录  是否自动登录 待测试
 					// setTimeout(function() {
 					// 	uni.redirectTo({
@@ -456,10 +455,10 @@ let is_reconnect = false;
 				}
 			}
 		});
-		console.log('isOpened', this.$im.conn.isOpened());
-		console.log(uni.getStorageSync('HuanXinToken'))
-		console.log(uni.getStorageSync('myUsername'))
-		console.log(uni.getStorageSync(this.$store.state.userToken));
+		// console.log('isOpened', this.$im.conn.isOpened());
+		// console.log(uni.getStorageSync('HuanXinToken'))
+		// console.log(uni.getStorageSync('myUsername'))
+		// console.log(uni.getStorageSync(this.$store.state.userToken));
 		setTimeout(() => {
 			if (!this.$im.conn.isOpened() && uni.getStorageSync('HuanXinToken') && uni.getStorageSync('myUsername') && this.$store.state.userToken) {
 				is_reconnect = true;

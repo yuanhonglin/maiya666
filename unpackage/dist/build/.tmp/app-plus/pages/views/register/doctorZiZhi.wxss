@@ -24,10 +24,10 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-page.data-v-044da3a4 {
+page.data-v-7774750b {
   background-color: #f7f7f7;
 }
-.top.data-v-044da3a4 {
+.top.data-v-7774750b {
   margin: 20rpx 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -39,19 +39,19 @@ page.data-v-044da3a4 {
   background-color: #fff;
   padding: 30rpx 0;
 }
-.top image.data-v-044da3a4 {
+.top image.data-v-7774750b {
     width: 170rpx;
     height: 170rpx;
     margin: 0 auto;
 }
-.top .top-b.data-v-044da3a4 {
+.top .top-b.data-v-7774750b {
     margin-top: 20rpx;
 }
-.top .top-b .t2.data-v-044da3a4 {
+.top .top-b .t2.data-v-7774750b {
       font-size: 28rpx;
       color: #333;
 }
-.box.data-v-044da3a4 {
+.box.data-v-7774750b {
   width: 100%;
   background-color: #fff;
   padding: 0 30rpx;
@@ -69,10 +69,10 @@ page.data-v-044da3a4 {
   line-height: 80rpx;
   border-bottom: 1rpx solid #f4f4f4;
 }
-.box .box-left.data-v-044da3a4 {
+.box .box-left.data-v-7774750b {
     width: 30%;
 }
-.box .box-right.data-v-044da3a4 {
+.box .box-right.data-v-7774750b {
     width: 70%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -85,7 +85,7 @@ page.data-v-044da3a4 {
             align-items: center;
     color: #999;
 }
-.b.data-v-044da3a4 {
+.b.data-v-7774750b {
   position: fixed;
   bottom: 0;
   width: 100%;
